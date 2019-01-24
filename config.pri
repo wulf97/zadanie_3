@@ -30,6 +30,8 @@ win32 {
                 DESTDIR = $${_PRO_FILE_PWD_}/../release/
         }
 
+        CONFIG += staticlib
+
         RCC_DIR = $${_PRO_FILE_PWD_}/build
         MOC_DIR = $${_PRO_FILE_PWD_}/build
         OBJECTS_DIR = $${_PRO_FILE_PWD_}/build
