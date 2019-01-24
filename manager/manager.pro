@@ -28,4 +28,18 @@ unix {
     LIBS += -llib1 -llib2
 }
 
+win32 {
+    win32-g++{
+        LIBS += \
+            liblib1.a \
+            liblib2.a
+    }
+
+    win32-msvc*{
+        LIBS += \
+            lib1.lib \
+            lib2.lib
+    }
+}
+
 message("Build manager")
