@@ -31,14 +31,14 @@ unix {
 win32 {
     win32-g++{
         LIBS += \
-            liblib1.a \
-            liblib2.a
+            $${DESTDIR}/liblib1.a \
+            $${DESTDIR}/liblib2.a
     }
 
     win32-msvc*{
         LIBS += \
-            lib1.lib \
-            lib2.lib
+            $${DESTDIR}/lib1.lib \
+            $${DESTDIR}/lib2.lib
     }
 }
 
