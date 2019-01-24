@@ -28,4 +28,20 @@ unix {
     LIBS += -lmanager -llib1 -llib2
 }
 
+win32 {
+    win32-g++{
+        LIBS += \
+            libmanager.a \
+            liblib1.a \
+            liblib2.a
+    }
+
+    win32-msvc*{
+        LIBS += \
+            manager.lib \
+            lib1.lib \
+            lib2.lib
+    }
+}
+
 message("Build main")
