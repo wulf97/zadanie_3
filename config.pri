@@ -7,8 +7,8 @@ unix {
 		DESTDIR = $${_PRO_FILE_PWD_}/../debug/
         } else {
 		CONFIG += ReleaseBuild
-		LIBS += -L$${_PRO_FILE_PWD_}/../release/
-		DESTDIR = $${_PRO_FILE_PWD_}/../release/
+                LIBS += -L$${_PRO_FILE_PWD_}/../release/
+                DESTDIR = $${_PRO_FILE_PWD_}/../release/
         }
 
 	CONFIG += staticlib
@@ -22,12 +22,10 @@ unix {
 win32 {
         CONFIG(debug, debug|release) {
                 CONFIG += DebugBuild
-                LIBS += $${_PRO_FILE_PWD_}/../debug/
                 DESTDIR = $${_PRO_FILE_PWD_}/../debug/
         } else {
                 CONFIG += ReleaseBuild
-                LIBS += $${_PRO_FILE_PWD_}/../release/
-                DESTDIR = $${_PRO_FILE_PWD_}/../release/
+                DESTDIR = $${_PRO_FILE_PWD_}/../release
         }
 
         CONFIG += staticlib
